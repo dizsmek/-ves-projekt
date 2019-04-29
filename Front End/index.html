@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Weather Sensor</title>
+
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!------------ BOOTSTRAP ------------>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+		<!------------ JQUERY ------------>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+
+
+
+	<body class="container text-dark">
+
+		<header class="row p-4 my-3">
+			<div class="col-2">
+				<img src="images/arduino.png" alt="arduino logo" class="img-responsive">
+			</div>
+			<div class="col-10 font-weight-bold">
+				<h1 class="vcenter py-3 text-info">Weather Data - right from Arduino Wifi REV2</h1>
+			</div>
+		</header>
+
+		<main class="row my-5 position-relative">
+			<div class="float-left">
+				<div class="position-relative">
+					<h3 class="text-secondary position-absolute">℃</h3>
+					<label class="float-left switch position-absolute">
+						<input id="switchInput" type="checkbox">
+						<span class="slider round position-absolute"></span>
+					</label>
+					<h3 class="text-secondary position-absolute">℉</h3>
+				</div>
+			</div>
+
+			<div class="col float-right position-absolute">
+				<button class="btn-primary btn-lg d-block m-auto">Update my weather data</button>
+			</div>	
+		</main>
+
+
+
+
+		<p id="data"></p>
+
+		<script src="action.js"></script>
+	</body>
+</html>
